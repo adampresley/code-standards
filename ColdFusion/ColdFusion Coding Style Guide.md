@@ -121,8 +121,8 @@ local.result = doStuff(name = "Bob");
 ```
 
 ### 1.4 Curly and Square Braces
-* All open curly braces for function declarations, try/catch blocks, while,
-   if, and structure variable declarations go on the same line as the
+* All open curly braces for function declarations, **try/catch** blocks, **while**,
+   **if**, and structure variable declarations go on the same line as the
    statement/expression they are attached to
 * All closing curly braces go on the next line
 * Open curly braces for structures defined inside an array may start on their
