@@ -235,3 +235,23 @@ local.permissionService = new Services.Security.PermissionService();
 ### 2.7 CFM File Names
 * ColdFusion files with a CFM extension *must use* **Camel case**.
    Example: ```permissionManager.cfm```
+
+### 2.8 Abbreviations
+Avoid abbreviations when possible. If a given abbreviation is well known to
+a given industry or domain it is acceptable to use.
+
+### 2.9 Acronyms
+Acronyms are similar to abbreviations. They should be avoided when possible.
+However some acronyms, if common enough in your domain, are acceptable.
+
+* Acronyms *must be* **Upper case** in all situations, ***unless*** they are
+   at the start of the word. Words, variables, and functions that start with
+   an acronym *must be* **Lower case**
+
+**Examples**
+```cfm
+local.userSSN = "12345";
+request.urlPrefix = "http://";
+local.workerID = 1;
+local.id = 10;
+```
