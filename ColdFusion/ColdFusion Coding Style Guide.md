@@ -172,6 +172,18 @@ local.people =
 }];
 ```
 
+### 1.5 CFML/Script Conventions
+When working with CFML (not CFScript) the following applies.
+
+* ColdFusion tags *must be* **Lower case**
+* Tags must either have an equivalent closing tag, or be self-closing
+* All tags must be indented one level from their parent. This applies when
+   the parent is another CFML tag, or an HTML tag
+
+When working with CF function in both script and CFML, the following applies.
+
+* ColdFusion functions *must be* **Camel case**
+
 
 2. Casing and Naming
 --------------------
