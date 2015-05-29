@@ -361,3 +361,20 @@ local.id = 10;
 
 </cfscript>
 ```
+
+### 2.10 Scopes
+* All scope names *must be* **Lower case**
+
+**Example**
+```cfm
+<cfscript>
+
+public string function boldAName(required string name) output="false" {
+   return "<strong>#arguments.name#</strong>";
+}
+
+request.myBoldedName = boldAName(name="Adam");
+
+session.name = "Adam";
+session.boldedName = request.myBoldedName;
+```
