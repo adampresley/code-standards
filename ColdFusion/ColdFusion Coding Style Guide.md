@@ -180,10 +180,36 @@ When working with CFML (not CFScript) the following applies.
 * All tags must be indented one level from their parent. This applies when
    the parent is another CFML tag, or an HTML tag
 
+**Good**
+```cfm
+<p>
+   <cfif viewData.customer.hasModule(name="SomeModule")>
+      <cfset text = "Text 1" />
+   <cfelse>
+      <cfset text = "Text 2" />
+   </cfif>
+
+   <cfoutput>#text#</cfoutput>
+</p>
+```
+
+**Bad**
+```cfm
+<p><CFIF viewData.customer.hasModule("SomeModule")>
+<cfset text = "Text 1"><cfelse><cfset text = "Text 2">
+<cfoutput>#text#</cfoutput></p>
+```
+
 When working with CF function in both script and CFML, the following applies.
 
 * ColdFusion functions *must be* **Camel case**
 
+**Example**
+```cfm
+public void function addItemToCart(required CartItem item) output="false" {
+   arrayAppend(variables.shoppingCart, item);
+}
+```
 
 2. Casing and Naming
 --------------------
