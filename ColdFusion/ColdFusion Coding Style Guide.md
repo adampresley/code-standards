@@ -256,7 +256,7 @@ public void function addItemToCart(required CartItem item) output="false" {
 </cfscript>
 ```
 
-### Quotes
+### 1.6 Quotes
 ColdFusion allows using both double and single quotes for working with strings.
 
 * *Always* prefer double quotes for creating strings
