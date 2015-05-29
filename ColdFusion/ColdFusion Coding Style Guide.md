@@ -256,6 +256,13 @@ public void function addItemToCart(required CartItem item) output="false" {
 </cfscript>
 ```
 
+### Quotes
+ColdFusion allows using both double and single quotes for working with strings.
+
+* *Always* prefer double quotes for creating strings
+* Use single quotes when creating strings that contain double quotes and
+   would require excessive escaping. This makes the code more readable
+
 2. Casing and Naming
 --------------------
 
