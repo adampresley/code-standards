@@ -370,4 +370,6 @@ request.myBoldedName = boldAName(name="Adam");
 
 session.name = "Adam";
 session.boldedName = request.myBoldedName;
+
+</cfscript>
 ```
