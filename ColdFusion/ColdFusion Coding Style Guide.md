@@ -176,25 +176,62 @@ local.people =
 2. Casing and Naming
 --------------------
 
-### Casing Definitions
-* Lower case - All digits are lower cased. Example: ```mynamehere```
-* Upper case - All digits are upper cased. Example: ```MYNAMEHERE```
-* Pascal case - First letter of each word upper cased, starting with an upper
+### 2.1 Casing Definitions
+* **Lower case** - All digits are lower cased. Example: ```mynamehere```
+* **Upper case** - All digits are upper cased. Example: ```MYNAMEHERE```
+* **Pascal case** - First letter of each word upper cased, starting with an upper
    case letter. Example: ```MyNameHere```
-* Camel case - First letter of each word upper cased, starting with a lower
+* **Camel case** - First letter of each word upper cased, starting with a lower
    case letter. Example: ```myNameHere```
 
-### Variable Names
-* All variable names *must be* in camel case
+### 2.2 Variable Names
+* All variable names *must be* in **camel case**
 
-**Good**
+**Example**
 ```cfm
 local.payPeriod = "Bi-weekly";
 local.allCustomerSettings = [];
 ```
 
-**Bad**
+### 2.3 Constants
+ColdFusion doesn't support true constants, but...
+
+* As a convention use **Upper case** when defining a variable that is intended
+   to be used as a constant
+* Use underscores between words
+
+**Example**
 ```cfm
-local.PayPeriod = "Bi-weekly";
-local.allcustomersettings = [];
+this.VALID_STATES = [
+   "Ready",
+   "Parsing",
+   "EOF"
+];
 ```
+
+### 2.4 Function Names
+* Function names *must use* **Camel case**. Example: ```deleteRecordByID()```
+
+### 2.5 Package Names
+Much like in Java ColdFusion supports the concept of packages. A component
+placed in a directory structure is considered to part of that package. For
+example, a component named **PermissionService.cfc** placed in a directory path
+of ```/Services/Security``` is considered to be in the *Services.Security*
+package.
+
+* Directories designed to be used as package *must use* **Pascal case**
+
+This means that in the above example both the **Services** and the **Security**
+directories follow the **Pascal case** convention. Then when instantiating
+a component from this package it will look like this.
+
+```cfm
+local.permissionService = new Services.Security.PermissionService();
+```
+
+### 2.6 Component File Names
+* Components (CFC files) *must use* **Pascal case**. Example: ```TokenMapper.cfc```
+
+### 2.7 CFM File Names
+* ColdFusion files with a CFM extension *must use* **Camel case**.
+   Example: ```permissionManager.cfm```
