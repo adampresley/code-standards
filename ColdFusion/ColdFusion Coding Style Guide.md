@@ -2,6 +2,7 @@ ColdFusion Coding Style Guide
 =============================
 
 **Author:** Adam Presley
+
 **Revisions:**
 
 |Date        |Author           |Revision
