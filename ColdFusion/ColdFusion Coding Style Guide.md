@@ -26,16 +26,24 @@ ColdFusion Coding Style Guide
 
 **Good**
 ```cfm
+<cfscript>
+
 public void function sayHi(string name, numeric age) output="false" {
 
 }
+
+</cfscript>
 ```
 
 **Bad**
 ```cfm
+<cfscript>
+
 public void function sayHi(string name , numeric age) output="false" {
 
 }
+
+</cfscript>
 ```
 
 * *Do not use spaces* before or after parenthesis when defining and calling
@@ -45,30 +53,46 @@ public void function sayHi(string name , numeric age) output="false" {
 
 **Good**
 ```cfm
+<cfscript>
+
 local.sum = add(left=1, right=2);
 if (local.sum > 10) {
    // Do stuff
 }
+
+</cfscript>
 ```
 
 **Bad**
 ```cfm
+<cfscript>
+
 local.sum = add ( left=1, right=2 );
 if(local.sum > 10){
    // Do stuff
 }
+
+</cfscript>
 ```
 
 * *Do* use spaces between operators and operands in expresions
 
 **Good**
 ```cfm
+<cfscript>
+
 local.sum = 1 + 4 + local.somethingElse;
+
+</cfscript>
 ```
 
 **Bad**
 ```cfm
+<cfscript>
+
 local.sum = 1+4+local.somethingElse;
+
+</cfscript>
 ```
 
 * *Do not* use spaces around equal signs when calling functions using named
@@ -78,20 +102,28 @@ local.sum = 1+4+local.somethingElse;
 
 **Good**
 ```cfm
+<cfscript>
+
 public string function doStuff(string name="Adam") output="false" {
 
 }
 
 local.result = doStuff(name="Bob");
+
+</cfscript>
 ```
 
 **Bad**
 ```cfm
+<cfscript>
+
 public string function doStuff(string name = "Adam") output="false" {
 
 }
 
 local.result = doStuff(name = "Bob");
+
+</cfscript>
 ```
 
 ### 1.4 Curly and Square Braces
@@ -141,6 +173,8 @@ local.people = [
 
 **Bad**
 ```cfm
+<cfscript>
+
 if (isValid)
 {
    // Do stuff
@@ -174,6 +208,8 @@ local.people =
    name: "Adam",
    age: 36
 }];
+
+</cfscript>
 ```
 
 ### 1.5 CFML/Script Conventions
@@ -210,9 +246,13 @@ When working with CF function in both script and CFML, the following applies.
 
 **Example**
 ```cfm
+<cfscript>
+
 public void function addItemToCart(required CartItem item) output="false" {
    arrayAppend(variables.shoppingCart, item);
 }
+
+</cfscript>
 ```
 
 2. Casing and Naming
@@ -231,8 +271,12 @@ public void function addItemToCart(required CartItem item) output="false" {
 
 **Example**
 ```cfm
+<cfscript>
+
 local.payPeriod = "Bi-weekly";
 local.allCustomerSettings = [];
+
+</cfscript>
 ```
 
 ### 2.3 Constants
@@ -244,11 +288,15 @@ ColdFusion doesn't support true constants, but...
 
 **Example**
 ```cfm
+<cfscript>
+
 this.VALID_STATES = [
    "Ready",
    "Parsing",
    "EOF"
 ];
+
+</cfscript>
 ```
 
 ### 2.4 Function Names
@@ -268,7 +316,11 @@ directories follow the **Pascal case** convention. Then when instantiating
 a component from this package it will look like this.
 
 ```cfm
+<cfscript>
+
 local.permissionService = new Services.Security.PermissionService();
+
+</cfscript>
 ```
 
 ### 2.6 Component File Names
@@ -292,8 +344,12 @@ However some acronyms, if common enough in your domain, are acceptable.
 
 **Examples**
 ```cfm
+<cfscript>
+
 local.userSSN = "12345";
 request.urlPrefix = "http://";
 local.workerID = 1;
 local.id = 10;
+
+</cfscript>
 ```
