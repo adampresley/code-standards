@@ -3,13 +3,6 @@ ColdFusion Coding Style Guide
 
 **Author:** Adam Presley
 
-**Revisions:**
-
-|Date        |Author           |Revision
-|------------|-----------------|----------------------------------------------|
-|2015-05-28  |Adam Presley     |Initial creation                              |
-
-
 1. Whitespace and Formatting
 ----------------------------
 
