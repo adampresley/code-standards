@@ -91,7 +91,7 @@ component output="false" {
 
 ### 2.2 Naming
 Functions perform actions. As such they should make use of verbs. Furthermore
-most function tend to operate on something, and as such should clearly call
+most functions tend to operate on something, and as such should clearly call
 out what they are doing and to what they are performing this action on.
 
 **Example**
