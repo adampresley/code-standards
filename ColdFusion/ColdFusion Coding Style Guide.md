@@ -106,6 +106,8 @@ local.result = doStuff(name = "Bob");
 
 **Good**
 ```cfm
+<cfscript>
+
 if (isValid) {
    // Do stuff
 }
@@ -133,6 +135,8 @@ local.people = [
       age: 36
    }
 ];
+
+</cfscript>
 ```
 
 **Bad**
