@@ -104,7 +104,7 @@ public array function splitSentenceIntoWords(required string sentence) output="f
 Notice how the verb is **split**, and we can easily see we are acting on a
 sentence. That is the noun.
 
-There are times when simply verb may suffice. If the function is part of a
+There are times when a simple verb may suffice. If the function is part of a
 component where the intent or domain is clear, then the function name could
 be shortened to reflect only what it is doing. However be cautious.
 More clarity is better than assuming everyone reading your code understands
