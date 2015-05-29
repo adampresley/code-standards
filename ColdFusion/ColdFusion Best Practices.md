@@ -1,4 +1,4 @@
-CodFusion Best Practices
+ColdFusion Best Practices
 ========================
 
 **Author:** Adam Presley
