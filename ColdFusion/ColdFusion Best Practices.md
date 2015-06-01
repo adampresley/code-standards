@@ -134,3 +134,40 @@ public void function doSomething() output="false" {
    // ...
 }
 ```
+
+### 2.4 Calling Functions
+When calling user-defined functions in ColdFusion there are two ways it can
+be done. The first is *Ordered Arguments*, and the second is *Named Arguments*.
+
+**Example of Ordered Arguments**
+```js
+public numeric function ordered(numeric arg1, numeric arg2) output="false" {
+   //..
+}
+
+result = ordered(1, 2);
+```
+
+**Example of Named Arguments**
+```js
+public numeric function ordered(numeric arg1, numeric arg2) output="false" {
+   //..
+}
+
+result = named(arg1=1, arg2=2);
+```
+
+In most situations using *Named Arguments* is prefered as it offers additional
+clarity by allowing the reader to understand what each argument is. There are
+some times when using *Named Arguments* might be a bit over the top and wordy.
+As such use your best judgement when calling functions. Ask yourself, "Can the
+reader of this code read it like a sentence? Is the intent clear?" Here is
+an example of where *Ordered Arguments* might be clearer.
+
+```js
+public numeric function sum(numeric leftOperand, numeric rightOperand) output="false" {
+   return arguments.leftOperand + arguments.rightOperand;
+}
+
+result = sum(1, 2);
+```
