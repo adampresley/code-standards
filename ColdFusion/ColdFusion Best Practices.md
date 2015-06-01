@@ -118,3 +118,19 @@ component output="false" {
    }
 }
 ```
+
+### 2.3 Output
+It is rare that a function should directly send output to the browser. This is
+the responsibility of a view page or rendering component. Exceptions to this would
+be if the function is part of a rendering component in a framework or system
+that outputs contents to the browser as part of the request process.
+
+As such all functions, unless they send content to the browser, *must* include
+the output attribute set to *false*.
+
+**Example**
+```js
+public void function doSomething() output="false" {
+   // ...
+}
+```
