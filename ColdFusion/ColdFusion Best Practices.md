@@ -10,6 +10,7 @@ are a few rules and gotcha's for scoping in ColdFusion which will be outlined
 here.
 
 * *All* variables in components (CFC) must be prefixed with a scope
+   * See **Section 2.1** for more information on function scoping in components
 * Any variable in a CFM file must be prefixed with a scope, *except* those
    intended for the **variables** scope.
    - This is the default scope for CFM pages
@@ -80,6 +81,8 @@ component output="false" {
    Hello #session.employee.name#.<br />
    Your pay this week is #request.rc.employeePay#
 </p>
+
+</cfoutput>
 ```
 
 2. Functions
