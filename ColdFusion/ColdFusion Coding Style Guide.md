@@ -303,7 +303,31 @@ this.VALID_STATES = [
 ### 2.4 Function Names
 * Function names *must use* **Camel case**. Example: ```deleteRecordByID()```
 
-### 2.5 Package Names
+### 2.5 Abbreviations
+Avoid abbreviations when possible. If a given abbreviation is well known to
+a given industry or domain it is acceptable to use.
+
+### 2.6 Acronyms
+Acronyms are similar to abbreviations. They should be avoided when possible.
+However some acronyms, if common enough in your domain, are acceptable.
+
+* Acronyms *must be* **Upper case** in all situations, ***unless*** they are
+   at the start of the word. Words, variables, and functions that start with
+   an acronym *must be* **Lower case**
+
+**Examples**
+```cfm
+<cfscript>
+
+local.userSSN = "12345";
+request.urlPrefix = "http://";
+local.workerID = 1;
+local.id = 10;
+
+</cfscript>
+```
+
+### 2.7 Package Names
 Much like in Java ColdFusion supports the concept of packages. A component
 placed in a directory structure is considered to part of that package. For
 example, a component named **PermissionService.cfc** placed in a directory path
@@ -324,36 +348,12 @@ local.permissionService = new Services.Security.PermissionService();
 </cfscript>
 ```
 
-### 2.6 Component File Names
+### 2.8 Component File Names
 * Components (CFC files) *must use* **Pascal case**. Example: ```TokenMapper.cfc```
 
-### 2.7 CFM File Names
+### 2.9 CFM File Names
 * ColdFusion files with a CFM extension *must use* **Camel case**.
    Example: ```permissionManager.cfm```
-
-### 2.8 Abbreviations
-Avoid abbreviations when possible. If a given abbreviation is well known to
-a given industry or domain it is acceptable to use.
-
-### 2.9 Acronyms
-Acronyms are similar to abbreviations. They should be avoided when possible.
-However some acronyms, if common enough in your domain, are acceptable.
-
-* Acronyms *must be* **Upper case** in all situations, ***unless*** they are
-   at the start of the word. Words, variables, and functions that start with
-   an acronym *must be* **Lower case**
-
-**Examples**
-```cfm
-<cfscript>
-
-local.userSSN = "12345";
-request.urlPrefix = "http://";
-local.workerID = 1;
-local.id = 10;
-
-</cfscript>
-```
 
 ### 2.10 Scopes
 * All scope names *must be* **Lower case**
